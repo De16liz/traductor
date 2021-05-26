@@ -1,2 +1,8 @@
 <?php
-$conexion = mysqli_connect("localhost", "root", "", "traductor");
+class conexion
+{
+    static function conectar()
+    {
+        return mysqli_connect("localhost", "root", "", "traductor");
+    }
+}
